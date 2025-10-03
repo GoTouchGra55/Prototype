@@ -22,7 +22,7 @@ const Configurator = () => {
   const fetchAsteroids = async (startDate, endDate) => {
     setShowSearch(false);
     try {
-      const apiKey = import.meta.env.VITE_API_KEY;
+      const apiKey = "ohVUtiXsz1afqFpmS5ktfSc4fdgf6B5IWIr7hXdC";
       const response = await fetch(
         `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${endDate}&api_key=${apiKey}`
       );
